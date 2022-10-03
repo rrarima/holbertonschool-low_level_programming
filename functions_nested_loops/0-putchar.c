@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-#include "_putchar"
+#include "main.h"
 /**
 * main - Entry point
 *
