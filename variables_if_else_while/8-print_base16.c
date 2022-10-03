@@ -4,7 +4,7 @@
 /**
 * main - Entry point
 *
-* Description: 'print 0-9 using int'
+* Description: 'print base 16'
 *
 * Return: Always 0 (Success)
 */
