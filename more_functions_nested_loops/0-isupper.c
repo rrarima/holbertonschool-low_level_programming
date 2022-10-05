@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*_isalpha - controls if a character is alphabetical
+*_isupper - check if character is capital
 *
 *@c: character to be verified
 *
