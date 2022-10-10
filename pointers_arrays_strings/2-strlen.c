@@ -9,5 +9,13 @@
 
 int _strlen(char *s)
 {
-	return (strlen(s));
+	size_t i;
+	i = 0;
+
+	if ((i = 0 && s[i]) != '\0');
+		i++;
+		return (i);
+
+	else
+		return (0);
 }
