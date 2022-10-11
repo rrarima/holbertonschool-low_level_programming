@@ -10,15 +10,14 @@
 
 void reverse_array(int *a, int n)
 {
-	int l,tmp,r;
+	int l, tmp, r;
 
 	r = n - 1;
 	l = 0;
 
-	/** assign values of a array in tmp
-	 * then put last array in first array
-	 * then put value in tmp to last array
-	 */
+	/** assign values of a array in tmp*/
+	/** then put last array in first array*/
+	/** then put value in tmp to last array*/
 	while (l < r)
 	{
 		tmp = a[l]; /** swap Pleft - Pright*/
