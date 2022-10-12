@@ -14,7 +14,7 @@ char *cap_string(char *str)
 	while (str[index])
 	{
 		/*check for all lower case letters*/
-		while(!(str[index] >= 'a' && str[index] <= 'z'))
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
 		{
 			index = index + 1;
 		}
@@ -43,5 +43,5 @@ char *cap_string(char *str)
 		index = index + 1;
 	}
 
-	return(str);
+	return (str);
 }
