@@ -47,5 +47,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 		i = i + 1;
 	}
+	comp_string[i] = '\0';
 	return (comp_string);
 }
