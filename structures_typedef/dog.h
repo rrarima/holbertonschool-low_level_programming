@@ -1,7 +1,7 @@
 #ifndef _DOG_
 #define _DOG_
 /**
- * struct my_struct - Short description
+ * struct dog - dog struct
  * @name: Name of dog
  * @age: Age of dog
  * @owner: Owner name
