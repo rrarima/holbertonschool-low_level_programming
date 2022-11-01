@@ -6,7 +6,7 @@
  * @name: store dog name
  * @age: age
  * @owner: store owner
- * Return: newd
+ * Return: dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
