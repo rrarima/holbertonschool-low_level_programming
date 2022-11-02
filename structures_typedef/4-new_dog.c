@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
+#include "functions.h"
 /**
  * *new_dog - function to create new dog struct
  * @name: store dog name
