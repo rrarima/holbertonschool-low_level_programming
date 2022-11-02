@@ -1,6 +1,5 @@
 #include "dog.h"
 #include <stdlib.h>
-#include "functions.h"
 /**
  * *new_dog - function to create new dog struct
  * @name: store dog name
@@ -11,40 +10,31 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
-	unsigned int name_size = sizeof(char) * (_strlen(name) + 1);
-	unsigned int owner_size = sizeof(char) * (_strlen(owner) + 1);
 
 	dog = malloc(sizeof(struct dog));
+
 	if (dog == NULL)
 	{
 		return (NULL);
 	}
-	if (name == NULL)
-	{
-		return (NULL);
-	}
-	dog->name = malloc(name_size);
+
+	dog->name = _strdup(name);
+
 	if (dog->name == NULL)
 	{
 		free(dog);
 		return (NULL);
 	}
-	_strcpy(dog->name, name);
 
-	dog->age = age;
+	dog->owner = _strdup(owner);
 
-	if (owner == NULL)
+	if (dog->owner == NULL)
 	{
-		free(dog->owner);
+		free(dog->name);
 		free(dog);
 		return (NULL);
 	}
-	dog->owner = malloc(owner_size);
-	if (dog->owner == NULL)
-	{
-		return (NULL);
-	}
-	_strcpy(dog->owner, owner);
 
+	dog->age = age;
 	return (dog);
 }
