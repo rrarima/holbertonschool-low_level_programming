@@ -1,11 +1,15 @@
 #include "lists.h"
+/**
+  * print_list - Prints all elements of a list
+  * @h: A linked list
+  *
+  * Return: count
+  */
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
-	const list_t *ptr = NULL;
 
-	ptr = h;
-	while (ptr != NULL)
+	while (h != NULL)
 	{
 		if (ptr->str == NULL)
 		{
@@ -15,7 +19,7 @@ size_t print_list(const list_t *h)
 		{
 			printf("[%d] %s \n", ptr->len, ptr->str);
 		}
-		ptr = ptr->next;
+		h = h->next;
 		count = count + 1;
 	}
 	return (count);
