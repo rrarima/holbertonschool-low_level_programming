@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
-  * print_list - Prints all elements of a list
+  * print_listint - Prints all elements of a list
   * @h: A linked list
   *
   * Return: count
