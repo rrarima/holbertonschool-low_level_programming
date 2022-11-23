@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 
-#define TABLE_SIZE 1000
+#define TABLE_SIZE 2000
 
 /**
  * struct hash_node_s - Node of a hash table
