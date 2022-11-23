@@ -8,22 +8,24 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	int i = 0;
-
+	unsigned int i = 0;
 	hash_table_t *allocate_table = malloc(sizeof(hash_table_t) * 1);
 
-	if (allocate_table == NULL)
+	if (size == 0 || allocate_table == NULL)
 	{
 		return (NULL);
 	}
-
+	allocate_table->size = size;
 	allocate_table->array = malloc(sizeof(size) * TABLE_SIZE);
-
+	if (allocate_table->array == NULL)
+	{
+		return (NULL);
+	}
 	while (i < TABLE_SIZE)
 	{
-		allocate_hashtable->array[i] = NULL;
+		allocate_table->array[i] = NULL;
 		i = i + 1;
 	}
 
-	return (hashtable);
+	return (allocate_table);
 }
