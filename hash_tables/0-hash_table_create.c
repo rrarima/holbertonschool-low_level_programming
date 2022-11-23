@@ -10,13 +10,18 @@ hash_table_t *hash_table_create(unsigned long int size)
 {
 	int i = 0;
 
-	hash_table_t *hashtable = malloc(sizeof(hash_table_t) * 1);
+	hash_table_t *allocate_table = malloc(sizeof(hash_table_t) * 1);
 
-	hashtable->array = malloc(sizeof(size) * TABLE_SIZE);
+	if (size == 0)
+	{
+		return (NULL);
+	}
+
+	allocate_table->array = malloc(sizeof(size) * TABLE_SIZE);
 
 	while (i < TABLE_SIZE)
 	{
-		hashtable->array[i] = NULL;
+		allocate_hashtable->array[i] = NULL;
 		i = i + 1;
 	}
 
