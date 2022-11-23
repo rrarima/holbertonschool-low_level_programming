@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * set_bit - sets a bit to 0 at given index
+ * clear_bit - sets a bit to 0 at given index
  * @n: pointer to integer
  * @index: index to set to 0
  * Return: 1 if succeeded or -1 if failed
