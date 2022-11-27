@@ -3,6 +3,8 @@
 
 #include <stdlib.h>
 #include <stddef.h>
+#include <stdio.h>
+#include <string.h>
 
 #define TABLE_SIZE 2048
 
